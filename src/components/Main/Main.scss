@@ -1,0 +1,459 @@
+@import "../../style/vars.scss";
+
+.container.main {
+  gap: 240px;
+  @media (max-width: 1919px) {
+    gap: 120px;
+  }
+  @media (max-width: 1200px) {
+    gap: 90px;
+  }
+  @media (max-width: 900px) {
+    gap: 60px;
+  }
+  .why {
+    @include flex(flex, column, space-between, flex-start);
+    gap: 32px;
+    h2 {
+      color: rgb(55, 55, 55);
+    }
+    .reviews {
+      @include flex(flex, row, space-between, flex-start);
+      gap: 32px;
+      @media (max-width: 1919px) {
+        gap: 20px;
+      }
+      @media (max-width: 1000px) {
+        @include flex(flex, column, space-between, flex-start);
+      }
+      > div {
+        padding: 48px 0;
+        @media (max-width: 1919px) {
+          width: 32%;
+        }
+        @media (max-width: 1200px) {
+          padding: 30px 0;
+        }
+        @media (max-width: 1000px) {
+          width: 100%;
+          padding: 0;
+        }
+        .personData {
+          @include flex(flex, row, flex-start, center);
+          gap: 26px;
+          margin-bottom: 27px;
+          h4 {
+            color: rgb(55, 55, 55);
+          }
+          span {
+            color: rgb(63, 194, 187);
+            @include font(16px, 400, 24px);
+            @media (max-width: 1100px) {
+              @include font(12px, 400, 16px);
+            }
+          }
+        }
+        p {
+          color: rgb(112, 112, 112);
+          @include font(16px, 400, 24px);
+        }
+      }
+    }
+  }
+  .unsplashGraphic {
+    width: 100%;
+    position: relative;
+    h2 {
+      color: rgb(55, 55, 55);
+      margin-bottom: 18px;
+    }
+    p {
+      width: 773px;
+      color: rgb(112, 112, 112);
+      @include font(16px, 400, 24px);
+      margin-bottom: 454px;
+      @media (max-width: 1919px) {
+        margin-bottom: 40px;
+      }
+      @media (max-width: 1200px) {
+        width: 80%;
+      }
+    }
+    .yellowBackground {
+      position: absolute;
+      top: -120px;
+      right: 39px;
+      opacity: 0.5;
+      @media (max-width: 1919px) {
+        z-index: -1;
+      }
+      @media (max-width: 1450px) {
+        top: -50px;
+        right: 20px;
+      }
+      @media (max-width: 750px) {
+        top: 10px;
+        right: 30px;
+      }
+      img {
+        @media (max-width: 1919px) {
+          width: 400px;
+        }
+        @media (max-width: 1450px) {
+          width: 300px;
+        }
+        @media (max-width: 1000px) {
+          width: 200px;
+        }
+        @media (max-width: 750px) {
+          width: 150px;
+        }
+      }
+    }
+    .blueBackground {
+      position: absolute;
+      top: -63px;
+      right: -80px;
+      opacity: 0.8;
+      @media (max-width: 1919px) {
+        z-index: -1;
+      }
+      @media (max-width: 1450px) {
+        top: 0;
+        right: -10px;
+      }
+      @media (max-width: 750px) {
+        top: 30px;
+        right: 10px;
+      }
+      img {
+        @media (max-width: 1919px) {
+          width: 400px;
+        }
+        @media (max-width: 1450px) {
+          width: 300px;
+        }
+        @media (max-width: 1000px) {
+          width: 200px;
+        }
+        @media (max-width: 750px) {
+          width: 150px;
+        }
+      }
+    }
+    .pictures {
+      top: 215px;
+      left: -174px;
+      position: absolute;
+      @include flex(flex, row, space-between, center);
+      gap: 40px;
+      @media (max-width: 1919px) {
+        position: static;
+        width: 100%;
+        gap: 0;
+      }
+      img {
+        @media (max-width: 1919px) {
+          width: 18%;
+        }
+      }
+    }
+  }
+  .speedUpDesign {
+    @include flex(flex, column, space-between, flex-start);
+    gap: 96px;
+    width: 100%;
+    @media (max-width: 1820px) {
+      gap: 50px;
+    }
+    @media (max-width: 500px) {
+      gap: 20px;
+    }
+    h2 {
+      color: rgb(55, 55, 55);
+    }
+    > div {
+      @include flex(flex, row, space-between, flex-start);
+      gap: 32px;
+      @media (max-width: 500px) {
+        @include flex(flex, column, space-between, center);
+        gap: 20px;
+      }
+      > div {
+        width: 480px;
+        @include flex(flex, row, space-between, flex-start);
+        gap: 31px;
+        @media (max-width: 1820px) {
+          width: 32%;
+          gap: 15px;
+        }
+        @media (max-width: 1000px) {
+          @include flex(flex, column, space-between, flex-start);
+        }
+        @media (max-width: 500px) {
+          @include flex(flex, column, space-between, center);
+          text-align: center;
+          width: 100%;
+        }
+        img {
+          @media (max-width: 1820px) {
+            width: 80px;
+          }
+          @media (max-width: 1000px) {
+            width: 40px;
+          }
+          @media (max-width: 500px) {
+            width: 30px;
+          }
+        }
+        p {
+          color: rgb(112, 112, 112);
+          @include font(12px, 400, 16px);
+        }
+        .yellow {
+          color: rgb(255, 216, 78);
+        }
+        .red {
+          color: rgb(251, 99, 99);
+        }
+        .violet {
+          color: rgb(166, 109, 245);
+        }
+        .green {
+          color: rgb(109, 214, 176);
+        }
+        .blue {
+          color: rgb(112, 140, 240);
+        }
+        .pink {
+          color: rgb(160, 46, 142);
+        }
+      }
+    }
+  }
+  .enjoyProduct {
+    width: 100%;
+    border-radius: 32px;
+    background-image: url("../../assets/backgroundMain.png");
+    background-repeat: no-repeat;
+    padding: 517px 648px 104px 32px;
+    @media (max-width: 1500px) {
+      padding: 20% 10% 5% 2%;
+      background-size: cover;
+    }
+    @media (max-width: 500px) {
+      padding: 0;
+      background-image: none;
+    }
+    > div {
+      border-radius: 16px;
+      width: 824px;
+      padding: 32px 64px;
+      -webkit-backdrop-filter: blur(24px);
+      backdrop-filter: blur(24px);
+      background-color: rgba(255, 255, 255, 0.8);
+      @media (max-width: 1820px) {
+        max-width: 700px;
+      }
+      @media (max-width: 1100px) {
+        max-width: 500px;
+        padding: 20px 25px;
+      }
+      @media (max-width: 800px) {
+        max-width: 100%;
+      }
+      @media (max-width: 500px) {
+        padding: 0;
+      }
+      h2 {
+        color: rgb(55, 55, 55);
+        margin-bottom: 8px;
+      }
+      p {
+        color: rgb(112, 112, 112);
+        @include font(16px, 400, 24px);
+        margin-bottom: 36px;
+        @media (max-width: 1100px) {
+          margin-bottom: 15px;
+          @include font(12px, 400, 18px);
+        }
+      }
+    }
+  }
+  .projectTeam {
+    width: 100%;
+    margin-bottom: 240px;
+    @media (max-width: 1919px) {
+      margin-bottom: 150px;
+    }
+    @media (max-width: 1200px) {
+      margin-bottom: 90px;
+    }
+    .projectTeamTitle {
+      @include flex(flex, row, space-between, flex-end);
+      gap: 302px;
+      margin-bottom: 96px;
+      @media (max-width: 1820px) {
+        gap: 150px;
+      }
+      @media (max-width: 1000px) {
+        gap: 50px;
+        margin-bottom: 40px;
+      }
+      @media (max-width: 800px) {
+        @include flex(flex, column, space-between, center);
+      }
+      > div {
+        width: 839px;
+        @media (max-width: 1820px) {
+          width: 700px;
+        }
+        @media (max-width: 1500px) {
+          width: 100%;
+        }
+        h2 {
+          color: rgb(55, 55, 55);
+          margin-bottom: 17px;
+        }
+        p {
+          color: rgb(112, 112, 112);
+          @include font(16px, 400, 24px);
+        }
+      }
+      button {
+        width: 373px;
+        @media (max-width: 1550px) {
+          width: 300px;
+        }
+        @media (max-width: 1000px) {
+          width: 200px;
+        }
+      }
+    }
+    .projectTeamPeople {
+      @include flex(flex, row, space-between, flex-start);
+      gap: 32px;
+      margin-bottom: 53px;
+      @media (max-width: 1650px) {
+        gap: 20px;
+      }
+      @media (max-width: 1550px) {
+        gap: 70px;
+        flex-wrap: wrap;
+        @include flex(flex, row, space-around, flex-start);
+      }
+      @media (max-width: 1100px) {
+        gap: 30px;
+      }
+      @media (max-width: 500px) {
+        gap: 40px;
+      }
+      > div {
+        width: 352px;
+        height: 434px;
+        background-size: cover;
+        @media (max-width: 1820px) {
+          width: 25%;
+          height: 380px;
+        }
+        @media (max-width: 1650px) {
+          height: 350px;
+        }
+        @media (max-width: 1550px) {
+          width: 35%;
+          height: 450px;
+        }
+        @media (max-width: 1400px) {
+          width: 45%;
+        }
+        @media (max-width: 1200px) {
+          height: 380px;
+        }
+        @media (max-width: 900px) {
+          width: 70%;
+          height: 450px;
+        }
+        @media (max-width: 680px) {
+          width: 100%;
+        }
+        @media (max-width: 500px) {
+          height: 300px;
+        }
+        @media (max-width: 400px) {
+          height: 210px;
+        }
+        .personData {
+          -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+          position: relative;
+          top: 329px;
+          background-color: rgba(255, 255, 255, 0.8);
+          border-radius: 30px;
+          padding: 16px 32px;
+          margin: auto;
+          width: 272px;
+          @media (max-width: 1919px) {
+            width: 80%;
+          }
+          @media (max-width: 1650px) {
+            top: 280px;
+          }
+          @media (max-width: 1550px) {
+            top: 400px;
+            width: 70%;
+          }
+          @media (max-width: 1200px) {
+            top: 300px;
+            padding: 10px 25px;
+          }
+          @media (max-width: 500px) {
+            top: 220px;
+          }
+          @media (max-width: 400px) {
+            top: 140px;
+          }
+          h5 {
+            margin-bottom: 4px;
+          }
+          span {
+            color: rgb(63, 194, 187);
+            @include font(16px, 700, 24px);
+            display: inline-block;
+            margin-bottom: 16px;
+            @media (max-width: 1600px) {
+              @include font(12px, 500, 18px);
+            }
+            @media (max-width: 1000px) {
+              margin-bottom: 10px;
+            }
+          }
+          > div {
+            @include flex(flex, row, space-between, center);
+            gap: 23px;
+            @media (max-width: 1919px) {
+              gap: 10px;
+              @include flex(flex, row, space-around, center);
+            }
+            img {
+              @media (max-width: 1919px) {
+                width: 30px;
+              }
+            }
+          }
+        }
+      }
+      .team1 {
+        background-image: url("../../assets/team_1.png");
+      }
+      .team2 {
+        background-image: url("../../assets/team_2.png");
+      }
+      .team3 {
+        background-image: url("../../assets/team_3.png");
+      }
+      .team4 {
+        background-image: url("../../assets/team_4.png");
+      }
+    }
+  }
+}

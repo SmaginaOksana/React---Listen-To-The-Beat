@@ -1,0 +1,184 @@
+@import "../../style/vars.scss";
+
+header {
+  background: linear-gradient(rgba(0, 105, 119, 1), rgba(0, 54, 62, 0)),
+    url("../../assets/backgroundHeader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 240px;
+  @media (max-width: 1919px) {
+    margin-bottom: 150px;
+  }
+  @media (max-width: 1200px) {
+    margin-bottom: 90px;
+  }
+  .container.header {
+    padding-top: 40px;
+    padding-bottom: 151px;
+    gap: 160px;
+    @media (max-width: 1919px) {
+      padding-bottom: 40px;
+      gap: 60px;
+    }
+    .top {
+      width: 100%;
+      @include flex(flex, row, space-between, center);
+      nav {
+        @include flex(flex, row, space-between, center);
+        gap: 24px;
+        @media (max-width: 1550px) {
+          gap: 5px;
+        }
+        @media (max-width: 1200px) {
+          display: none;
+        }
+        a {
+          text-transform: uppercase;
+          height: 50px;
+          color: white;
+          padding: 16px 24px;
+          @media (max-width: 1550px) {
+            padding: 10px 16px;
+          }
+        }
+        .signUp {
+          color: rgb(255, 215, 3);
+          border: 2px solid rgb(255, 215, 3);
+          height: 48px;
+          border-radius: 100px;
+          padding: 14px 40px;
+          width: 166px;
+          @include flex(flex, row, space-between, center);
+        }
+      }
+      .burger {
+        display: none;
+        @media (max-width: 1200px) {
+          display: block;
+        }
+      }
+    }
+    .title {
+      width: 100%;
+      @include flex(flex, row, space-between, center);
+      @media (max-width: 900px) {
+        @include flex(flex, row, space-between, flex-start);
+      }
+      .titleName {
+        width: 909px;
+        h1 {
+          margin-bottom: 24px;
+        }
+        p {
+          margin-bottom: 72px;
+          @include font(24px, 500, 36px);
+          color: rgb(206, 255, 253);
+          @media (max-width: 900px) {
+            margin-bottom: 30px;
+            @include font(15px, 400, 20px);
+          }
+        }
+        button {
+          width: 299px;
+          @media (max-width: 1919px) {
+            width: 230px;
+          }
+          @media (max-width: 1000px) {
+            width: 140px;
+          }
+        }
+      }
+      .titleButton {
+        padding: 93px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        @media (max-width: 1550px) {
+          padding: 40px;
+        }
+        @media (max-width: 900px) {
+          padding: 20px;
+        }
+        @media (max-width: 500px) {
+          padding: 10px;
+        }
+        > div {
+          padding: 90px;
+          border: 2px solid rgba(255, 255, 255, 0.5);
+          border-radius: 50%;
+          @media (max-width: 1550px) {
+            padding: 40px;
+          }
+          @media (max-width: 900px) {
+            padding: 20px;
+          }
+          @media (max-width: 500px) {
+            padding: 10px;
+          }
+          img {
+            width: 134px;
+            @media (max-width: 1550px) {
+              width: 80px;
+            }
+            @media (max-width: 900px) {
+              width: 50px;
+            }
+            @media (max-width: 500px) {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+    .howItWorks {
+      @include flex(flex, column, space-between, flex-start);
+      gap: 32px;
+      h2 {
+        color: rgb(244, 244, 244);
+      }
+      > div {
+        @include flex(flex, row, space-between, center);
+        gap: 32px;
+        @media (max-width: 1919px) {
+          gap: 0;
+        }
+        @media (max-width: 900px) {
+          gap: 32px;
+          @include flex(flex, column, space-between, center);
+        }
+        > div {
+          border-radius: 16px;
+          width: 480px;
+          background-color: rgba(255, 255, 255, 0.5);
+          padding: 32px;
+          @media (max-width: 1919px) {
+            width: 30%;
+          }
+          @media (max-width: 1200px) {
+            height: 280px;
+          }
+          @media (max-width: 900px) {
+            width: 90%;
+            height: auto;
+            padding: 20px;
+          }
+          img {
+            margin-bottom: 16px;
+            @media (max-width: 1200px) {
+              width: 20%;
+            }
+            @media (max-width: 900px) {
+              width: 10%;
+            }
+          }
+          h3 {
+            color: rgb(244, 244, 244);
+            margin-bottom: 8px;
+          }
+          p {
+            color: rgb(206, 255, 253);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,209 @@
+@import "../../style/vars.scss";
+
+.footerTop {
+  background: linear-gradient(rgba(0, 105, 119, 1), rgba(0, 54, 62, 0)),
+    url("../../assets/backgroundHeader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container.footer {
+    padding-top: 155px;
+    padding-bottom: 155px;
+    @include flex(flex, column, space-between, center);
+    @media (max-width: 1400px) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    p {
+      width: 610px;
+      text-align: center;
+      color: white;
+      @include font(16px, 400, 24px);
+      margin-bottom: 32px;
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+    }
+    form {
+      @include flex(flex, row, space-between, center);
+      margin-bottom: 32px;
+      @media (max-width: 500px) {
+        @include flex(flex, column, space-between, center);
+        gap: 20px;
+      }
+      input {
+        border: 1px solid rgb(202, 255, 253);
+        border-radius: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 34px;
+        width: 312px;
+        &::placeholder {
+          color: rgb(204, 204, 204);
+        }
+        margin-right: 16px;
+        @media (max-width: 1200px) {
+          width: 200px;
+        }
+      }
+    }
+    .social {
+      gap: 8px;
+      @include flex(flex, row, space-between, center);
+    }
+  }
+}
+hr {
+  opacity: 0.2;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(229, 237, 245);
+}
+.footerEnd {
+  background-color: rgb(11, 81, 77);
+  .container.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 32px;
+    > div {
+      @include flex(flex, row, space-between, flex-start);
+      @media (max-width: 900px) {
+        @include flex(flex, column, space-between, flex-start);
+      }
+    }
+    .sections {
+      width: 100%;
+      margin-bottom: 32px;
+      @media (max-width: 500px) {
+        @include flex(flex, row, space-between, flex-start);
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      > div {
+        @media (max-width: 900px) {
+          width: 80%;
+          @include flex(flex, row, space-between, flex-start);
+        }
+        @media (max-width: 600px) {
+          width: 100%;
+        }
+        @media (max-width: 500px) {
+          width: 45%;
+          @include flex(flex, column, space-between, flex-start);
+        }
+      }
+      h4 {
+        color: rgb(244, 244, 244);
+        @include font(18px, 500, 27px);
+        margin-bottom: 16px;
+        @media (max-width: 1550px) {
+          @include font(15px, 400, 18px);
+        }
+      }
+      a {
+        margin-bottom: 8px;
+        display: block;
+        text-transform: uppercase;
+        color: rgb(56, 183, 175);
+        @include font(12px, 400, 18px);
+        @media (max-width: 1550px) {
+          @include font(10px, 400, 14px);
+        }
+      }
+      span {
+        display: block;
+        text-transform: uppercase;
+        color: rgb(56, 183, 175);
+        @media (max-width: 1550px) {
+          @include font(10px, 400, 14px);
+        }
+      }
+      .news {
+        @media (max-width: 900px) {
+          @include flex(flex, column, space-between, flex-start);
+        }
+        h4 {
+          margin-bottom: 2px;
+        }
+        p {
+          color: rgb(206, 255, 253);
+          @include font(16px, 400, 24px);
+          margin-bottom: 16px;
+          @media (max-width: 1550px) {
+            @include font(10px, 400, 14px);
+          }
+        }
+        .name {
+          text-transform: none;
+          display: block;
+          color: white;
+          margin-bottom: 15px;
+        }
+        form {
+          @include flex(flex, row, space-between, center);
+          @media (max-width: 500px) {
+            @include flex(flex, column, space-between, center);
+            gap: 20px;
+          }
+          input {
+            border: 1px solid rgb(202, 255, 253);
+            border-radius: 32px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 34px;
+            width: 312px;
+            &::placeholder {
+              color: rgb(204, 204, 204);
+            }
+            margin-right: 16px;
+            @media (max-width: 1200px) {
+              width: 200px;
+            }
+          }
+          button {
+            background-color: transparent;
+            width: 166px;
+            span {
+              color: rgb(255, 215, 3);
+            }
+            @media (max-width: 1000px) {
+              width: 140px;
+            }
+          }
+        }
+      }
+    }
+    .linksFooterEnd {
+      width: 100%;
+      @include flex(flex, row, space-between, center);
+      @media (max-width: 700px) {
+        @include flex(flex, column, space-between, center);
+        gap: 10px;
+      }
+      > div {
+        @include flex(flex, row, space-between, center);
+        a {
+          text-transform: uppercase;
+          opacity: 0.5;
+          color: rgb(56, 183, 175);
+          @include font(12px, 400, 18px);
+        }
+        img {
+          opacity: 0.4;
+          margin-right: 4px;
+        }
+        p {
+          opacity: 0.4;
+          color: rgb(63, 194, 187);
+          @include font(12px, 400, 18px);
+        }
+      }
+      .links {
+        gap: 32px;
+      }
+    }
+  }
+}

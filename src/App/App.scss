@@ -1,0 +1,127 @@
+@import "../style/vars.scss";
+
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+  h1 {
+    @include font(106px, 400, 130%);
+    color: rgb(244, 244, 244);
+    @media (max-width: 1919px) {
+      @include font(80px, 400, 110px);
+    }
+    @media (max-width: 1550px) {
+      @include font(60px, 400, 80px);
+    }
+    @media (max-width: 1100px) {
+      @include font(35px, 400, 45px);
+    }
+  }
+  h2 {
+    @include font(60px, 400, 90px);
+    @media (max-width: 1919px) {
+      @include font(50px, 400, 70px);
+    }
+    @media (max-width: 1550px) {
+      @include font(35px, 400, 50px);
+    }
+    @media (max-width: 1000px) {
+      @include font(25px, 400, 30px);
+    }
+  }
+  h3 {
+    @include font(40px, 400, 60px);
+    @media (max-width: 1919px) {
+      @include font(30px, 400, 50px);
+    }
+    @media (max-width: 1550px) {
+      @include font(20px, 400, 30px);
+    }
+    @media (max-width: 1000px) {
+      @include font(15px, 400, 20px);
+    }
+  }
+  h4 {
+    @include font(32px, 400, 48px);
+    @media (max-width: 1919px) {
+      @include font(24px, 400, 40px);
+    }
+    @media (max-width: 1550px) {
+      @include font(15px, 400, 18px);
+    }
+  }
+  h5 {
+    @include font(24px, 500, 36px);
+    color: rgb(55, 55, 55);
+    @media (max-width: 1919px) {
+      @include font(18px, 400, 24px);
+    }
+    @media (max-width: 1600px) {
+      @include font(15px, 500, 18px);
+    }
+    @media (max-width: 1550px) {
+      @include font(12px, 400, 15px);
+    }
+  }
+  a {
+    text-decoration: none;
+    @include font(12px, 400, 18px);
+  }
+  button {
+    @include flex(flex, row, space-between, center);
+    color: rgb(44, 44, 44);
+    background-color: rgb(255, 215, 3);
+    border: 2px solid rgb(255, 215, 3);
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: 23px 72px;
+    height: 79px;
+    @include font(22px, 400, 33px);
+    @media (max-width: 1919px) {
+      padding: 14px 40px;
+    }
+    @media (max-width: 1550px) {
+      height: 60px;
+      width: 166px;
+      @include font(14px, 400, 21px);
+    }
+    @media (max-width: 1000px) {
+      @include font(12px, 400, 15px);
+      padding: 10px 20px;
+      width: 140px;
+      height: auto;
+      img {
+        width: 30px;
+      }
+    }
+  }
+  button.signUp {
+    @include font(14px, 400, 21px);
+    height: 48px;
+    padding: 14px 40px;
+    @media (max-width: 900px) {
+      @include font(12px, 400, 15px);
+      padding: 10px 20px;
+    }
+  }
+  .container {
+    @include flex(flex, column, space-between, center);
+    padding-left: 208px;
+    padding-right: 208px;
+    @media (max-width: 1919px) {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+    @media (max-width: 1500px) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    @media (max-width: 1200px) {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+    @media (max-width: 700px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
