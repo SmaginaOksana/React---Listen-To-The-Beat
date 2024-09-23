@@ -1,0 +1,33 @@
+@import "../../style/vars.scss";
+.section {
+  width: 480px;
+  @include flex(flex, row, space-between, flex-start);
+  gap: 31px;
+  @media (max-width: 1820px) {
+    width: 32%;
+    gap: 15px;
+  }
+  @media (max-width: 1000px) {
+    @include flex(flex, column, space-between, flex-start);
+  }
+  @media (max-width: 500px) {
+    @include flex(flex, column, space-between, center);
+    text-align: center;
+    width: 100%;
+  }
+  img {
+    @media (max-width: 1820px) {
+      width: 80px;
+    }
+    @media (max-width: 1000px) {
+      width: 40px;
+    }
+    @media (max-width: 500px) {
+      width: 30px;
+    }
+  }
+  p {
+    color: rgb(112, 112, 112);
+    @include font(12px, 400, 16px);
+  }
+}

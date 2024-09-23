@@ -174,60 +174,14 @@
     }
     > div {
       @include flex(flex, row, space-between, flex-start);
+      flex-wrap: wrap;
       gap: 32px;
+      @media (max-width: 1820px) {
+        @include flex(flex, row, center, center);
+      }
       @media (max-width: 500px) {
         @include flex(flex, column, space-between, center);
         gap: 20px;
-      }
-      > div {
-        width: 480px;
-        @include flex(flex, row, space-between, flex-start);
-        gap: 31px;
-        @media (max-width: 1820px) {
-          width: 32%;
-          gap: 15px;
-        }
-        @media (max-width: 1000px) {
-          @include flex(flex, column, space-between, flex-start);
-        }
-        @media (max-width: 500px) {
-          @include flex(flex, column, space-between, center);
-          text-align: center;
-          width: 100%;
-        }
-        img {
-          @media (max-width: 1820px) {
-            width: 80px;
-          }
-          @media (max-width: 1000px) {
-            width: 40px;
-          }
-          @media (max-width: 500px) {
-            width: 30px;
-          }
-        }
-        p {
-          color: rgb(112, 112, 112);
-          @include font(12px, 400, 16px);
-        }
-        .yellow {
-          color: rgb(255, 216, 78);
-        }
-        .red {
-          color: rgb(251, 99, 99);
-        }
-        .violet {
-          color: rgb(166, 109, 245);
-        }
-        .green {
-          color: rgb(109, 214, 176);
-        }
-        .blue {
-          color: rgb(112, 140, 240);
-        }
-        .pink {
-          color: rgb(160, 46, 142);
-        }
       }
     }
   }
@@ -382,77 +336,6 @@
         @media (max-width: 400px) {
           height: 210px;
         }
-        .personData {
-          -webkit-backdrop-filter: blur(13px);
-          backdrop-filter: blur(13px);
-          position: relative;
-          top: 329px;
-          background-color: rgba(255, 255, 255, 0.8);
-          border-radius: 30px;
-          padding: 16px 32px;
-          margin: auto;
-          width: 272px;
-          @media (max-width: 1919px) {
-            width: 80%;
-          }
-          @media (max-width: 1650px) {
-            top: 280px;
-          }
-          @media (max-width: 1550px) {
-            top: 400px;
-            width: 70%;
-          }
-          @media (max-width: 1200px) {
-            top: 300px;
-            padding: 10px 25px;
-          }
-          @media (max-width: 500px) {
-            top: 220px;
-          }
-          @media (max-width: 400px) {
-            top: 140px;
-          }
-          h5 {
-            margin-bottom: 4px;
-          }
-          span {
-            color: rgb(63, 194, 187);
-            @include font(16px, 700, 24px);
-            display: inline-block;
-            margin-bottom: 16px;
-            @media (max-width: 1600px) {
-              @include font(12px, 500, 18px);
-            }
-            @media (max-width: 1000px) {
-              margin-bottom: 10px;
-            }
-          }
-          > div {
-            @include flex(flex, row, space-between, center);
-            gap: 23px;
-            @media (max-width: 1919px) {
-              gap: 10px;
-              @include flex(flex, row, space-around, center);
-            }
-            img {
-              @media (max-width: 1919px) {
-                width: 30px;
-              }
-            }
-          }
-        }
-      }
-      .team1 {
-        background-image: url("../../assets/team_1.png");
-      }
-      .team2 {
-        background-image: url("../../assets/team_2.png");
-      }
-      .team3 {
-        background-image: url("../../assets/team_3.png");
-      }
-      .team4 {
-        background-image: url("../../assets/team_4.png");
       }
     }
   }

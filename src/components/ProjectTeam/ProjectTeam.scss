@@ -1,0 +1,73 @@
+@import "../../style/vars.scss";
+
+.personData {
+  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  position: relative;
+  top: 329px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  padding: 16px 32px;
+  margin: auto;
+  width: 272px;
+  @media (max-width: 1919px) {
+    width: 80%;
+  }
+  @media (max-width: 1650px) {
+    top: 280px;
+  }
+  @media (max-width: 1550px) {
+    top: 400px;
+    width: 70%;
+  }
+  @media (max-width: 1200px) {
+    top: 300px;
+    padding: 10px 25px;
+  }
+  @media (max-width: 500px) {
+    top: 220px;
+  }
+  @media (max-width: 400px) {
+    top: 140px;
+  }
+  h5 {
+    margin-bottom: 4px;
+  }
+  span {
+    color: rgb(63, 194, 187);
+    @include font(16px, 700, 24px);
+    display: inline-block;
+    margin-bottom: 16px;
+    @media (max-width: 1600px) {
+      @include font(12px, 500, 18px);
+    }
+    @media (max-width: 1000px) {
+      margin-bottom: 10px;
+    }
+  }
+  > div {
+    @include flex(flex, row, space-between, center);
+    gap: 23px;
+    @media (max-width: 1919px) {
+      gap: 10px;
+      @include flex(flex, row, space-around, center);
+    }
+    img {
+      @media (max-width: 1919px) {
+        width: 30px;
+      }
+    }
+  }
+}
+.team1 {
+  background-image: url("../../assets/team_1.png");
+}
+.team2 {
+  background-image: url("../../assets/team_2.png");
+}
+.team3 {
+  background-image: url("../../assets/team_3.png");
+}
+.team4 {
+  background-image: url("../../assets/team_4.png");
+}
